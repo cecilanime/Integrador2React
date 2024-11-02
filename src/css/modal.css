@@ -1,0 +1,78 @@
+/* Fondo oscuro que cubre toda la pantalla */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* Ocupa toda la anchura de la ventana */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  z-index: 1000; /* Superposición por encima de otros elementos */
+  margin: 0; /* Elimina cualquier margen que pueda estar empujando el modal */
+  padding: 0; /* Elimina el padding también */
+  box-sizing: border-box; /* Asegura que el ancho y alto incluyan padding y borde */
+}
+
+/* Contenido del modal centrado */
+.modal-content {
+  background-color: #f0f5dd;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cantidad-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.minus-button, .plus-button {
+  background-color:  #ff5722;
+  color: white;
+  border: none;
+  padding: 5px 10px; 
+  font-size: 14px;
+  cursor: pointer;
+  width: 30px; 
+  height: 30px; 
+}
+
+.cantidad {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.buy-confirm {
+  background-color:  #ff5722;
+  color: white;
+}
+
+.modal-content img {
+  width: 100%; /* Se adapta al ancho del contenedor */
+  max-width: 300px; /* Tamaño máximo de la imagen en el modal */
+  height: auto;
+  margin: 10px 0;
+  border-radius: 5px;
+}

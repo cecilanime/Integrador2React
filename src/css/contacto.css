@@ -1,0 +1,139 @@
+
+ body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #e4c570;
+    flex-direction: column;
+}
+
+header {
+    
+    padding: 20px;
+    text-align: center;
+    width: 100%; /
+}
+
+.containerHeader h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerHeader img {
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #333;
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    text-align: center; 
+    width: 80%; 
+    max-width: 800px; 
+}
+
+.textoNosotros {
+    width: 100%; 
+}
+
+form {
+    width: 100%; 
+    max-width: 600px; 
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 auto;
+}
+
+form legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+ textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+     border-radius: 5px;
+     height: 100px; 
+    margin-top: 5px;
+     border: 1px solid #504242;
+     resize: vertical; 
+ }
+
+
+button {
+    background-color: #f8b400;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; 
+}
+
+button:hover {
+    background-color: #d18e00;
+}
+
+.team-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+ @media (max-width: 768px) {
+    .contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textoNosotros, form {
+        width: 100%;
+    }
+} 
